@@ -1,0 +1,104 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #ec4b0c;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 250px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    background-color: #02060a;
+}
+
+/* Estilos del encabezado */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+/* Estilos de los cuadros de contenido */
+.content {
+    background-color: rgba(240, 240, 240, 0.9); /* Fondo gris claro con opacidad */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px; /* Máximo ancho para el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar los cuadros */
+    color: #333; /* Texto oscuro dentro del cuadro */
+}
+
+h2 {
+    color: #333; /* Títulos en el cuadro */
+}
+
+/* Aseguramos que el texto en los cuadros se vea bien */
+.content p {
+    color: #333;
+}
+
+/* Estilos del pie de página */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo claro con opacidad */
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #333; /* Color oscuro para que contraste */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+footer {
+    background-color: #a03308;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Estilo del footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #a03308;
+}

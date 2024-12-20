@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ec4b0c; /* Fondo verde claro */
+  }
+
+header {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+}
+
+/* Menú horizontal */
+nav {
+    background-color: #a03308; /* Verde oscuro */
+    width: 100%;               /* Asegura que el nav ocupe todo el ancho disponible */
+    max-width: 1200px;         /* Limita el tamaño máximo del nav */
+    margin: 0 auto;            /* Centra el nav en la página */
+    padding: 10px 0;           /* Ajusta el padding alrededor del nav */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* Centra los elementos de la lista dentro del nav */
+}
+
+nav ul li {
+    position: relative; /* Necesario para submenús */
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #f12424; /* Verde más claro al pasar el cursor */
+}
+
+/* Submenús */
+nav ul li ul {
+    display: none; /* Ocultar submenús por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ec4b0c;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    min-width: 150px;
+}
+
+nav ul li ul li a {
+    padding: 10px 20px;
+    color: white;
+}
+
+nav ul li ul li a:hover {
+    background-color: #f12424;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Estilo del slider */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 5px solid #f12424;
+    border-radius: 10px;
+}
+
+.slider img {
+    width: 100%;
+    display: none;
+}
+
+.slider img.active {
+    display: block;
+}
+
+/* Botones del slider */
+.slider .controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}

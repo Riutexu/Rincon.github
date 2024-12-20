@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones Rincón Mandón</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ec4b0c; /* Fondo color naranja */
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        /* Encabezado */
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        /* Estilo de la barra de navegación */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background-color: #a03308;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #f12424;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ec4b0c;
+            min-width: 150px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            padding: 10px;
+            color: white;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #f12424;
+        }
+
+        /* Estilo de la tabla */
+        .tabla-enlaces {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .tabla-enlaces td {
+            padding: 20px;
+        }
+
+        .tabla-enlaces button {
+            background-color: #a03308; /* Color de fondo del botón */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .tabla-enlaces button:hover {
+            background-color: #f12424;
+        }
+
+        /* Estilo del footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #a03308;
+        }
+    </style>
+</head>
+<body background="fondo.png">
+
+    <center><img src="cintillo.png" width="800" height="280"></center>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="#">Productos y Servicios</a>
+                    <ul>
+                        <li><a href="Productos.html">Productos</a></li>
+                        <li><a href="Servicios.html">Servicios</a></li>
+                    </ul>
+                </li>
+                <li><a href="Registro.html">Registro</a></li>
+                <li><a href="#">Galería</a>
+                    <ul>
+                        <li><a href="GaleriaFotos.html">Fotos</a></li>
+                        <li><a href="GaleriaVideos.html">Videos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="content">
+    
+
+        <center><h2>Seleccione una opción:</h2></center>
+
+        <!-- Tabla con dos botones para enlazar a las páginas de fotos y videos -->
+        <table class="tabla-enlaces">
+            <tr>
+                <td>
+                    <a href="GaleriaFotos.html">
+                        <button class="btn">Ir a Galería de Fotos</button>
+                    </a>
+                </td>
+                <td>
+                    <a href="GaleriaVideos.html">
+                        <button class="btn">Ir a Galería de Videos</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content" id="footer-text">
+            <p>© Derechos Reservados 2024 Inversiones Rincón Mandón</p>
+        </div>
+    </footer>
+
+</body>
+</html>

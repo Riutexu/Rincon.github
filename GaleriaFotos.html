@@ -1,0 +1,247 @@
+<html>
+<head>
+    <title>Inversiones Rincón Mandón</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="icon" href="Logo.png"> <!-- Enlace al archivo CSS -->
+</head>
+<body background="fondo.png">
+
+    <center><img src="cintillo.png" width="800" height="280"></center>
+
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="# ">Productos y Servicios</a>
+                    <ul>
+                        <li><a href="Productos.html">Productos</a></li>
+                        <li><a href="Servicios.html">Servicios</a></li>
+                    </ul>
+                </li>
+                <li><a href="Registro.html">Registro</a></li>
+                <li><a href="#">Galería</a>
+                    <ul>
+                        <li><a href="GaleriaFotos.html">Fotos</a></li>
+                        <li><a href="GaleriaVideos.html">Videos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #a03308;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            margin: 0 10px;
+            background-color: #ec4b0c;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover {
+            background-color: #f12424;
+        }
+
+        /* Carrusel de imágenes */
+        .image-slider {
+            display: flex;
+            overflow-x: hidden;
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .image-slider-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .image-slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .image-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .slider-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .prev, .next {
+            background-color: #a03308;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: #f12424;
+        }
+        footer {
+            background-color: #a03308;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 40px;
+        }
+        
+        /* Estilo del footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #a03308;
+        }
+
+    </style>
+
+    <main>
+        <h2>Galería de Fotos</h2>
+
+        <!-- Carrusel de imágenes -->
+        <div class="image-slider">
+            <div class="image-slider-container">
+                <!-- Imágenes (aquí puedes agregar las 15 imágenes) -->
+                <div class="image-slide">
+                    <img src="foto1.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto2.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto3.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto4.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto5.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto6.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto7.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto8.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto9.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto10.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto11.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto12.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto13.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto14.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto15.jpg" alt="">
+                </div>
+                <div class="image-slide">
+                    <img src="foto16.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Controles para mover el carrusel -->
+        <div class="slider-controls">
+            <button class="prev">Anterior</button>
+            <button class="next">Siguiente</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Derechos Reservados 2024 Inversiones Rincón Mandón</p>
+    </footer>
+
+    <script>
+        // Script para controlar el carrusel de imágenes
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.image-slide');
+        const totalSlides = slides.length;
+        const nextButton = document.querySelector('.next');
+        const prevButton = document.querySelector('.prev');
+        const sliderContainer = document.querySelector('.image-slider-container');
+
+        // Función para mover el carrusel a la siguiente imagen
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < totalSlides - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Volver a la primera imagen
+            }
+            updateSliderPosition();
+        });
+
+        // Función para mover el carrusel a la imagen anterior
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalSlides - 1; // Volver a la última imagen
+            }
+            updateSliderPosition();
+        });
+
+        // Actualiza la posición del carrusel
+        function updateSliderPosition() {
+            sliderContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+    </script>
+
+</body>
+</html>

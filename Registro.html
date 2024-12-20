@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones Rincón Mandón - Registro</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="icon" href="Logo.png"> <!-- Enlace al archivo CSS -->
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Contenedor principal */
+        .container {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        /* Tabla para centrar el formulario */
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #a03308;
+            color: white;
+        }
+
+        table td {
+            background-color: #f9f9f9;
+        }
+
+        /* Títulos y texto */
+        h1 {
+            color: #a03308;
+            font-size: 2rem;
+        }
+
+        /* Estilo del formulario */
+        input[type="text"], input[type="email"], input[type="number"], input[type="password"], input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Botón de envío */
+        .button {
+            background-color: #a03308;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #f12424;
+        }
+        footer {
+            background-color: #a03308;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 40px;
+        }
+        
+        /* Estilo del footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #a03308;
+        }
+
+    </style>
+</head>
+<body background="fondo.png">
+
+    <center><img src="cintillo.png" width="800" height="280"></center>
+
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="#">Productos y Servicios</a>
+                    <ul>
+                        <li><a href="Productos.html">Productos</a></li>
+                        <li><a href="Servicios.html">Servicios</a></li>
+                    </ul>
+                </li>
+                <li><a href="Registro.html">Registro</a></li>
+                <li><a href="#">Galería</a>
+                    <ul>
+                        <li><a href="GaleriaFotos.html">Fotos</a></li>
+                        <li><a href="GaleriaVideos.html">Videos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <h1>Registro de Usuario Satisfecho</h1>
+    <div class="container">
+    
+        <!-- Tabla que contiene el formulario -->
+        <table align="center">
+            <tr>
+                <th colspan="2">Formulario de Registro</th>
+            </tr>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" name="nombre" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Correo electrónico:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="comentario">Deja tu comentario:</label></td>
+                <td><textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escribe tu comentario aquí..."></textarea></td>
+            </tr>
+        </table>
+
+        <!-- Botón de submit -->
+        <div style="text-align: center;">
+            <input type="submit" value="Registrarse" class="button">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content" id="footer-text">
+            <p>© Derechos Reservados 2024 Inversiones Rincón Mandón</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<html>
+<head>
+    <title>Inversiones Rincón Mandón</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="icon" href="Logo.png"> <!-- Enlace al archivo CSS -->
+</head>
+<body background="fondo.png">
+
+    <center><img src="cintillo.png" width="800" height="280"></center>
+
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="#">Productos y Servicios</a>
+                    <ul>
+                        <li><a href="Productos.html">Productos</a></li>
+                        <li><a href="Servicios.html">Servicios</a></li>
+                    </ul>
+                </li>
+                <li><a href="Registro.html">Registro</a></li>
+                <li><a href="#">Galería</a>
+                    <ul>
+                        <li><a href="GaleriaFotos.html">Fotos</a></li>
+                        <li><a href="GaleriaVideos.html">Videos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #a03308;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            margin: 0 10px;
+            background-color: #ec4b0c;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover {
+            background-color: #f12424;
+        }
+
+        /* Carrusel de imágenes */
+        .image-slider {
+            display: flex;
+            overflow-x: hidden;
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .image-slider-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .image-slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .image-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .slider-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .prev, .next {
+            background-color: #a03308;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: #f12424;
+        }
+        footer {
+            background-color: #a03308;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 40px;
+        }
+        
+        /* Estilo del footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #a03308;
+        }
+
+    </style>
+
+    <main>
+        <center><h2>Galería de Fotos</h2></center>
+
+        <!-- Carrusel de imágenes -->
+        <div class="image-slider">
+            <div class="image-slider-container">
+                 <!-- Imágenes (aquí puedes agregar las 15 imágenes) -->
+                 <div class="image-slide">
+                    <video controls>
+                        <source src="Video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="image-slide">
+                    <video controls>
+                        <source src="Video2.mp4" type="video/mp4">
+                    </video>
+                    <div class="image-slide">
+                        <video controls>
+                            <source src="Video3.mp4" type="video/mp4">
+                        </video>
+                    </div>
